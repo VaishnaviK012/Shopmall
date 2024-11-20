@@ -1,0 +1,49 @@
+const tenWebAnimatedSection = document.querySelectorAll('.animated-section');
+
+document.addEventListener("DOMContentLoaded", () => {
+  const body = document.getElementsByTagName('body')[0];
+  document.getElementsByTagName('html')[0].classList.remove("no-js");
+  body.classList.remove("no-js");
+  body.classList.add("js");
+  checkInView();
+});
+document.addEventListener("scroll", () => {
+  checkInView();
+});
+
+function checkInView() {
+  for(let i = 0; i < tenWebAnimatedSection.length; i++) {
+    const element = tenWebAnimatedSection[i],
+      elementRect = element.getBoundingClientRect();
+
+    if (elementIsVisibleInViewport(elementRect, true) || i === 0) {
+      element.classList.add("animated");
+      if (element.querySelectorAll('.floating-items').length) {
+        floatingItemsAnimation(element.querySelectorAll('.floating-items'));
+      }
+    }
+  }
+}
+
+function elementIsVisibleInViewport( elementRect,  partiallyVisible = false) {
+  return partiallyVisible
+    ? ((elementRect.top > 0 && elementRect.top < (window.innerHeight - 200)) ||
+    (elementRect.bottom > 0 && elementRect.top < 0))
+    : elementRect.top >= 0 && elementRect.bottom <= window.innerHeight;
+}
+
+function floatingItemsAnimation(floatingItems) {
+  for(let i = 0; i < floatingItems.length; i++) {
+    setTransform(floatingItems[i]);
+  }
+}
+
+function setTransform(element) {
+  const offsetOffset = element.dataset.moving_offset,
+    rect = element.getBoundingClientRect(),
+    scrollPercent = 1 - (window.innerHeight - Math.max(0, rect.top)) / window.innerHeight;
+  let scroll = scrollPercent * offsetOffset;
+  scroll = scroll > offsetOffset ? offsetOffset : scroll;
+  element.style.transform = `translate(0, ${scroll}px)`;
+}
+
