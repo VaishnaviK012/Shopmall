@@ -345,7 +345,7 @@ function FQA() {
 
   return (
     <div className='parent mt-24'>
-      <div className='flex'>
+      <div className='flex md:ml-10 ml-5'>
         <h2>FQA</h2>
       </div>
 

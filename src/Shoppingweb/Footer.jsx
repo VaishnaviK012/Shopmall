@@ -10,7 +10,7 @@ function Footer() {
         <div className='flex mt-5  justify-start gap-3 text-lg text-white'>
 
            
-                <Link className=' text-white no-underline md:text-xl md:ml-24 '>
+                <Link className=' text-white no-underline md:text-xl md:ml-24 ml-2'>
                     10Web.io
                 </Link>
                 
@@ -24,7 +24,7 @@ function Footer() {
 
                 <h4>Try 10Web free today</h4>
         </div>
-        <div className='flex justify-center md:text-2xl text-white'>
+        <div className='flex justify-center md:text-2xl text-white ml-2'>
 
                 <h4>Build your online business in minutes with AI.</h4>
         </div>

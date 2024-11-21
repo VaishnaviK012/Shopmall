@@ -15,7 +15,7 @@ function Navv() {
       <nav className="bg-white dark:bg-gray-900 p-4">
         <div className="max-w-screen-xl flex items-center justify-evenly mx-auto">
           {/* Logo */}
-          <h3 className="text-2xl font-semibold dark:text-white">10Web</h3>
+          <h3 className="text-2xl  font-semibold dark:text-white">10Web</h3>
 
           {/* Mobile Menu Toggle Button */}
           <button
