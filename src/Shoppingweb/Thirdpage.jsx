@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 function Thirdpage() {
   return (
-    <div className=''>
+    <div className='parent'>
         
-        <div className='justify-center flex mt-32 '>
+        <div className='justify-center flex mt-32 ml-2 '>
             <h3>How to create a shopping mall website with 10Web</h3>
         </div>
         <div className='justify-center flex text-sm font-serif mt-3 pl-10'>
@@ -15,11 +15,11 @@ function Thirdpage() {
         <div className='grid grid-cols-1 md:grid-cols-2   '>
             <img src='/Pictures/add-pages.jpg' alt="" className='h-62 w-auto' />
 
-            <div className='justify-end mt-5 sm:ml-28'>
+            <div className='justify-end mt-5 sm:ml-28 '>
                                 
                 <div id="accordion-open" data-accordion="open">
                 <h4 id="accordion-open-heading-1">
-                    <button type="button" class="flex items-center justify-between  p-5 font-sm rtl:text-right text-gray-500  gap-3" data-accordion-target="#accordion-open-body-1" aria-expanded="true" aria-controls="accordion-open-body-1">
+                    <button type="button" class="flex items-center justify-between ml-14 font-sm rtl:text-right text-gray-500  gap-3" data-accordion-target="#accordion-open-body-1" aria-expanded="true" aria-controls="accordion-open-body-1">
                     <span class="flex items-center">1 Answer simple questions</span>
                     <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
@@ -34,8 +34,10 @@ function Thirdpage() {
                         and services to customize your website creation process.</p>
                     </div>
                 </div>
-                <h4 id="accordion-open-heading-2">
-                    <button type="button" class="flex items-center justify-between pl-10 gap-3" data-accordion-target="#accordion-open-body-2" aria-expanded="false" aria-controls="accordion-open-body-2">
+
+                {/* second session */}
+                <h4 id="accordion-open-heading-2 mt-5">
+                    <button type="button" class="flex items-center justify-between  pl-10 gap-3" data-accordion-target="#accordion-open-body-2" aria-expanded="false" aria-controls="accordion-open-body-2">
                     <span class="flex items-center ml-2">2 
                     Get AI generated functional website</span>
                     <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -51,8 +53,10 @@ function Thirdpage() {
                     </div>
                 </div>
                 
+
+                {/* third session */}
                 <h4 id="accordion-open-heading-3">
-                    <button type="button" class="flex items-center justify-between pl-10 mt-5 gap-3" data-accordion-target="#accordion-open-body-3" aria-expanded="false" aria-controls="accordion-open-body-3">
+                    <button type="button" class="flex items-center justify-between ml-12 mt-4 gap-3" data-accordion-target="#accordion-open-body-3" aria-expanded="false" aria-controls="accordion-open-body-3">
                     <span class="flex items-center ml-2">3 Customize easily</span>
                     <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>

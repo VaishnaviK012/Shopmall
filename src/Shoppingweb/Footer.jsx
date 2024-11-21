@@ -1,15 +1,20 @@
+import { faSkype } from '@fortawesome/free-brands-svg-icons/faSkype'
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
   return (
-    <div className='bg-black'>
-        <div className='flex mt-5 p-5 justify-start gap-5 text-white'>
+    <div className='bg-black parent'>
+        <div className='flex mt-5  justify-start gap-3 text-lg text-white'>
 
            
-                <Link className='ml-24 text-white no-underline md:text-xl '>
+                <Link className=' text-white no-underline md:text-xl md:ml-24 '>
                     10Web.io
                 </Link>
+                
+                
                 <Link className='text-white no-underline md:text-2xl'>
                   AI Website Builder
                 </Link>
@@ -27,8 +32,8 @@ function Footer() {
       <button className='bg-blue-600 text-white border rounded-md h-12 w-72 md:text-xl'>Generate Your Website</button>
         </div>
 
-        <div className='grid sm:grid-cols-1 justify-start md:text-xl sm:ml-60 sm:text-2xl md:grid-cols-5  pt-5'>
-            <div className='text-white mt-2'>
+        <div className='grid sm:grid-cols-1 justify-start md:text-xl sm:ml-60 sm:text-2xl md:grid-cols-5 ml-5  pt-5'>
+            <div className='text-white mt-2 '>
                 <h4>10Web</h4>
                 <div className='md:text-base sm:text-xl'>
                     <p>
@@ -251,29 +256,50 @@ function Footer() {
     
     </div>
 
-    <div className='text-white md:ml-28 md:mt-5 sm:mt-16 sm:ml-48'>
+    <div className='text-white mt-5 md:ml-28 md:mt-5 sm:mt-16 sm:ml-48'>
         <h6>Copyright © 2024 TenWeb. All rights reserved .</h6>
     </div>
+               {/* <div>
+               <div className="flex justify-center items-center h-screen bg-gray-100">
+      <FontAwesomeIcon
+        icon={faSkype}
+        className="text-blue-500 text-6xl p-4 rounded-full bg-white shadow-lg hover:bg-blue-100 transition-all"
+      />
+    </div>
+               </div> */}
+   
 
-    <div className='md:ml-24 gap-12 mt-24 pb-11 sm:ml-48 sm:mt-0'>
-        <Link className='text-white no-underline '>
+    <div className='flex justify-between md:ml-24 gap-0   sm:ml-48 sm:mt-0'>
+      <div className='mt-32'>
+        <Link className='text-white no-underline hover:underline '>
         Privacy
         </Link>
-        <Link className='ml-5 text-white no-underline'>
+        <Link className='ml-5 text-white no-underline hover:underline'>
         Terms of services
         </Link>
-        <Link className='ml-5 text-white no-underline'>
+        <Link className='ml-5 text-white no-underline hover:underline'>
        SLA
         </Link>
-        <Link className='ml-5 text-white no-underline'>
+        <Link className='ml-5 text-white no-underline hover:underline'>
        Report Abuse
         </Link>
-        <Link className='ml-5 text-white no-underline'>
+        <Link className='ml-5 text-white no-underline hover:underline'>
         Domain Name Services Agreement
         </Link>
-        <Link className='ml-5 text-white no-underline '>
+        <Link className=' pl-2 text-white no-underline hover:underline'>
        Accessiblity
         </Link>
+        </div>
+
+        <div className='flex  gap-1 mt-56 md:mr-28 md:gap-5 '>
+
+  <i className="fab fa-slack bg-gray-900  gap-3 text-md p-1 text-white border rounded-full"></i>
+  <i className="fab fa-twitter bg-gray-900 gap-3 text-md p-1 text-white border rounded-full"></i>
+  <i className="fab fa-youtube bg-gray-900  text-md p-1 text-white border rounded-full"></i>
+  <i className="fab fa-facebook bg-gray-900  text-md p-1 text-white border rounded-full"></i>
+  <i className="fab fa-linkedin bg-gray-900  text-md p-1 text-white border rounded-full"></i>
+  
+</div>
     </div>
     </div>
    

@@ -17,7 +17,6 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Sample from './Tailwindcss/Sample';
 
-import Home from './Shopping mall/Home';
 
 import Navv from './Shoppingweb/Navv';
 import SecondPage from './Shoppingweb/SecondPage';
@@ -30,7 +29,7 @@ import Browser from './Shoppingweb/Browser';
 import FQA from './Shoppingweb/FQA';
 import Footer from './Shoppingweb/Footer';
 import ReactOwlCarousel from 'react-owl-carousel';
-import CarouselComponent from './Shoppingweb/Carouselcomponent';
+import CarouselComponent from './CarouselComponent';
 
 
 function App() {
@@ -43,7 +42,7 @@ function App() {
     {/* <Home/> */}
   
 
-    <Navv/>    
+   <Navv/>   
     <SecondPage/>
     <Thirdpage/>
     <FourthPage/>

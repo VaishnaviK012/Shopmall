@@ -2,11 +2,11 @@ import React from 'react'
 
 function Fifthpage() {
   return (
-    <div className=''>
-        <div className='ml-32 mt-20 sm:text-6xl'>
+    <div className='parent'>
+        <div className='md:-ml-32 mt-20 sm:text-6xl'>
             <h3>5 tips to build a shopping mall website</h3>
         </div>
-        <div className='md:ml-48 grid grid-cols-5 md:grid-cols-2 sm:grid-cols-1 mt-8 sm:ml-28 sm:text-xl sm:pt-5'>
+        <div className='md:ml-48 grid grid-cols-1 pl-2 md:grid-cols-2 sm:grid-cols-1 mt-8 sm:ml-28 sm:text-xl sm:pt-5'>
             <div className=''>
                 <h3>
                 Intuitive Navigation</h3>

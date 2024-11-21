@@ -2,14 +2,14 @@ import React from 'react'
 
 function FourthPage() {
   return (
-    <div className='bg-black'>
+    <div className='bg-black parent'>
         <div className='grid md:grid-cols-3  sm:grid-cols-1 gap-0'>
             <div>
                 <img src='./Pictures/1.png' className='sm:h-50 md:h-50' alt="" />
             </div>
             <div>
 
-                <img src='./Pictures/3.png' className='h-32' alt="" />
+                {/* <img src='./Pictures/3.png' className='h-32' alt="" /> */}
                 
                 <div className='mt-0 gap-0 flex justify-center md:pt-40 '>
                     

@@ -344,12 +344,12 @@ function FQA() {
   };
 
   return (
-    <div>
-      <div className='flex sm:ml-24 sm:mt-24'>
+    <div className='parent mt-24'>
+      <div className='flex'>
         <h2>FQA</h2>
       </div>
 
-      <div className='grid grid-cols-6 sm:grid-cols-1 mt-2 '>
+      <div className='grid grid-cols-1  sm:grid-cols-2   mt-10'>
         {/* Accordion Section 1 */}
         <div className="border-b border-gray-200 dark:border-gray-700 ">
           <h2>
