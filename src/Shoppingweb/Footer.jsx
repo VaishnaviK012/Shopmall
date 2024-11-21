@@ -256,20 +256,12 @@ function Footer() {
     
     </div>
 
-    <div className='text-white mt-5 md:ml-28 md:mt-5 sm:mt-16 sm:ml-48'>
+    <div className='text-white mt-5 pl-3 md:ml-28 md:mt-5 sm:mt-16 sm:ml-48'>
         <h6>Copyright © 2024 TenWeb. All rights reserved .</h6>
     </div>
-               {/* <div>
-               <div className="flex justify-center items-center h-screen bg-gray-100">
-      <FontAwesomeIcon
-        icon={faSkype}
-        className="text-blue-500 text-6xl p-4 rounded-full bg-white shadow-lg hover:bg-blue-100 transition-all"
-      />
-    </div>
-               </div> */}
-   
+            
 
-    <div className='flex justify-between md:ml-24 gap-0   sm:ml-48 sm:mt-0'>
+    <div className='flex justify-between ml-3 md:ml-24 gap-0   sm:ml-48 sm:mt-0'>
       <div className='mt-32'>
         <Link className='text-white no-underline hover:underline '>
         Privacy
